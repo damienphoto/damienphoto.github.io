@@ -1,0 +1,14 @@
+{
+    "images_data_file": ".\\images_data.json",
+    "public_path": ".\\public",
+    "templates_path": ".\\templates",
+    "images_path": ".\\public\\images\\photos",
+    "thumbnails_path": ".\\public\\images\\thumbnails",
+    "thumbnail_height": 160,
+    "title": "2023 TGS dimanche partie 2",
+    "description": "Default description of my gallery",
+    "background_photo": "D600_2023-05-14_17-01-15.jpg",
+    "url": "damienphoto.fr",
+    "background_photo_offset": 30,
+    "disable_captions": false
+}

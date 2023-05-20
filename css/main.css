@@ -1,0 +1,150 @@
+body {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #166638;
+}
+
+.vote-link {
+    fill: #27ae60;
+}
+
+.vote-link:hover {
+    fill: #166638;
+}
+
+.blog-header {
+    line-height: 1;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-header-logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.blog-header-logo:hover {
+    text-decoration: none;
+}
+
+.blog-header-logo img {
+    width: 36px;
+    height: 36px;
+    line-height: 2rem;
+}
+
+.blog-menu {
+    margin-left: auto;
+}
+
+.icon-link {
+    color: #0a335f;
+}
+
+.icon-link:hover {
+    color: #27ae60;
+}
+
+.blog-post {
+    margin-bottom: 4rem;
+}
+
+.blog-post-title {
+    margin-bottom: 0.25rem;
+    font-size: 1.5rem;
+}
+
+.blog-post-title a,
+.blog-post h1 a {
+    color: #3c3500;
+}
+
+.blog-post-title a:hover,
+.blog-post h1 a:hover {
+    text-decoration: none;
+}
+
+.blog-post-meta {
+    margin-bottom: 1.25rem;
+    color: #000000;
+}
+
+.article-content img,
+.photo-cover {
+    /* display: block; */
+    /* margin: 20px auto; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image-500 {
+    max-width: 500px;
+    width: 95%;
+}
+
+.image-480 {
+    max-width: 480px;
+    width: 95%;
+}
+
+.image-750 {
+    max-width: 750px;
+    width: 95%;
+}
+
+.image-330 {
+    max-width: 330px;
+    width: 95%;
+}
+
+.image-300 {
+    max-width: 300px;
+    width: 95%;
+}
+
+.image-350 {
+    max-width: 350px;
+    width: 95%;
+}
+
+.image-1000 {
+    max-width: 1000px;
+    width: 95%;
+}
+
+twitter-widget {
+    margin: 0px auto;
+}
+
+.blog-footer {
+    padding: 1rem 0;
+    color: #133000;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 0.05rem solid #e5e5e5;
+}
+
+.btn-green {
+    color: #ffffff;
+    background-color: #27ae60;
+}
+
+.btn-green:hover {
+    color: #ffffff;
+    background-color: #166638;
+}
+
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.twitter-tweet {
+    margin: 0px auto;
+}

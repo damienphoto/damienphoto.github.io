@@ -1,0 +1,14 @@
+{
+    "images_data_file": ".\\images_data.json",
+    "public_path": ".\\public",
+    "templates_path": ".\\templates",
+    "images_path": ".\\public\\images\\photos",
+    "thumbnails_path": ".\\public\\images\\thumbnails",
+    "thumbnail_height": 160,
+    "title": "Mus\u00e9e l'envol des pionniers",
+    "description": "Ev\u00e8nement de la nuit des mus\u00e9es 2023 avec de magnifiques costumes",
+    "background_photo": "D600_2023-05-13_22-57-50.jpg",
+    "url": "damienphoto.fr",
+    "background_photo_offset": 30,
+    "disable_captions": false
+}

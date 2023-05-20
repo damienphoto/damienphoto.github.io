@@ -1,0 +1,14 @@
+{
+    "images_data_file": ".\\images_data.json",
+    "public_path": ".\\public",
+    "templates_path": ".\\templates",
+    "images_path": ".\\public\\images\\photos",
+    "thumbnails_path": ".\\public\\images\\thumbnails",
+    "thumbnail_height": 160,
+    "title": "Escadrilles jeunesse",
+    "description": "Default description of my gallery",
+    "background_photo": "D600_2023-05-13_17-16-31.jpg",
+    "url": "damienphoto.fr",
+    "background_photo_offset": 30,
+    "disable_captions": false
+}
