@@ -1,0 +1,14 @@
+{
+    "images_data_file": ".\\images_data.json",
+    "public_path": ".\\public",
+    "templates_path": ".\\templates",
+    "images_path": ".\\public\\images\\photos",
+    "thumbnails_path": ".\\public\\images\\thumbnails",
+    "thumbnail_height": 160,
+    "title": "echo et merveilles 2019",
+    "description": "echo et merveilles 2019",
+    "background_photo": "D600_2019-04-27_17-32-27.jpg",
+    "url": "damienphoto.github.io",
+    "background_photo_offset": 30,
+    "disable_captions": false
+}
