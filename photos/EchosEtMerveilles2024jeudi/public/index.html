@@ -38,39 +38,12 @@
 
 <body>
 
-   <script>
-      // Vérifie si la page est affichée sur un appareil mobile
-      function estSurMobile() {
-          return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-      }
-
-      // Désactive la rotation automatique des images JPEG si la page est affichée sur un appareil mobile
-      function desactiverRotationImages() {
-          if (estSurMobile()) {
-              // Sélectionne toutes les images JPEG de la page
-              var imagesJPEG = document.querySelectorAll('img[src$=".jpg"], img[src$=".jpeg"]');
-              
-              // Parcourt chaque image JPEG et désactive la rotation automatique
-              imagesJPEG.forEach(function(image) {
-                  // Notez que "imageOrientation" n'est pas largement supporté. Utilisez avec prudence.
-                  image.style.imageOrientation = "from-image"; // Désactive la rotation automatique
-              });
-          }
-      }
-
-      // Appel de la fonction lors du chargement de la page
-      window.onload = function() {
-          desactiverRotationImages();
-      };
-  </script>
-
   <div class="jumbotron header-image">
     <div class="header-info">
       <h1>EchosEtMerveilles2024jeudi</h1>
       <div class="header-info-details">EchosEtMerveilles</div>
     </div>
   </div>
-
 
   <!-- GALLERY DESCRIPTIONS -->
 
@@ -2254,6 +2227,46 @@
   <script src="js/photoswipe.min.js"></script>
   <script src="js/photoswipe-ui-default.min.js"></script>
   <script src="js/main.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+  <script>
+   function estSurMobile() {
+       return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+   }
+
+   function ajusterRotation(image, orientation) {
+       switch(orientation) {
+           case 3:
+               image.style.transform = "rotate(180deg)";
+               break;
+           case 6:
+               image.style.transform = "rotate(90deg)";
+               break;
+           case 8:
+               image.style.transform = "rotate(-90deg)";
+               break;
+           default:
+               image.style.transform = "rotate(0deg)";
+       }
+   }
+
+   function desactiverRotationImages() {
+       if (estSurMobile()) {
+           var imagesJPEG = document.querySelectorAll('img[src$=".jpg"], img[src$=".jpeg"]');
+           imagesJPEG.forEach(function(image) {
+               EXIF.getData(image, function() {
+                   var orientation = EXIF.getTag(this, "Orientation");
+                   ajusterRotation(image, orientation);
+               });
+           });
+       }
+   }
+
+   window.onload = function() {
+       desactiverRotationImages();
+   };
+   </script>
+
 </body>
 
 </html>
