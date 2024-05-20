@@ -2228,44 +2228,6 @@
   <script src="js/photoswipe-ui-default.min.js"></script>
   <script src="js/main.js"></script>
   
-  <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
-  <script>
-   function estSurMobile() {
-       return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-   }
-
-   function ajusterRotation(image, orientation) {
-       switch(orientation) {
-           case 3:
-               image.style.transform = "rotate(180deg)";
-               break;
-           case 6:
-               image.style.transform = "rotate(90deg)";
-               break;
-           case 8:
-               image.style.transform = "rotate(-90deg)";
-               break;
-           default:
-               image.style.transform = "rotate(0deg)";
-       }
-   }
-
-   function desactiverRotationImages() {
-       if (estSurMobile()) {
-           var imagesJPEG = document.querySelectorAll('img[src$=".jpg"], img[src$=".jpeg"]');
-           imagesJPEG.forEach(function(image) {
-               EXIF.getData(image, function() {
-                   var orientation = EXIF.getTag(this, "Orientation");
-                   ajusterRotation(image, orientation);
-               });
-           });
-       }
-   }
-
-   window.onload = function() {
-       desactiverRotationImages();
-   };
-   </script>
 
 </body>
 

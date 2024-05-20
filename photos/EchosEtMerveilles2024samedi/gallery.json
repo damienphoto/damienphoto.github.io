@@ -1,0 +1,14 @@
+{
+    "images_data_file": ".\\images_data.json",
+    "public_path": ".\\public",
+    "templates_path": ".\\templates",
+    "images_path": ".\\public\\images\\photos",
+    "thumbnails_path": ".\\public\\images\\thumbnails",
+    "thumbnail_height": 160,
+    "title": "EchosEtMerveilles2024samedi",
+    "description": "EchosEtMerveilles2024samedi",
+    "background_photo": "D600_2024-05-11_20-17-02.jpg",
+    "url": "",
+    "background_photo_offset": 30,
+    "disable_captions": false
+}
