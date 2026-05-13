@@ -23,12 +23,17 @@ a:hover {
 }
 
 .blog-header-logo {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #ffd700 !important;
     text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+.blog-header-logo-image {
+    max-height: 35px;
+    vertical-align: middle;
 }
 
 .blog-header-logo:hover {
@@ -62,6 +67,8 @@ a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid rgba(255, 215, 0, 0.1);
     background-color: #05080f;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
 }
 
 .photo-cover:hover {
